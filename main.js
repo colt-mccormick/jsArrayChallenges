@@ -5,7 +5,6 @@
 //Challenge #1
 
 var challengeOneInput = "jumbo shrimp"; 
- console.log("challengeOneInput: ", challengeOneInput);//display challengeOneInput
 
 var challengeOneInput = challengeOneInput.split(" ");   
 var alphabet = "abcdefghijklmnopqrstuvwxyz"; //set alphabet var
@@ -17,12 +16,10 @@ var challenge1HTML = document.getElementById('challenge1');
 
 for (i=0; i<firstWordArray.length; i++){
     firstWordCount += alphabet.indexOf(firstWordArray[i]) + 1; 
-    console.log("firstWordCount: ", firstWordCount); 
 }
 
 for (i=0; i<secondWordArray.length; i++){
     secondWordCount += alphabet.indexOf(secondWordArray[i]) + 1; 
-    console.log("secondWordCount: ", secondWordCount); 
 }
 
 if(firstWordCount > secondWordCount){
@@ -31,4 +28,3 @@ if(firstWordCount > secondWordCount){
     challenge1HTML.innerHTML = "<h3>" + secondWordArray.join('' ) + "</h3>"
 }
 
-//Challenge #2
