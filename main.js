@@ -24,7 +24,5 @@ for(j=0; j < challengeTwoInputB.length; j++){
     challenge2Array.push(Number(numberStringArray.join('')));
 }
 
-  console.log('challenge2Array: ', challenge2Array); 
-
   var challenge2Html = document.getElementById('challenge2'); 
   challenge2.innerHTML = '<h3>' + challenge2Array + '</h3>'; 
